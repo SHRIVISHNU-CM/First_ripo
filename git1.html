@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Skills</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap');
+       body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+
+       } 
+       label{
+        font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+       }
+       .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 500px;
+            background-color:#ecc5c5 ;
+            border-radius: 10px;
+
+       }
+       h1{
+        text-align: center;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #786f6f;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+       }
+       form{
+        padding:0 50px;
+        box-sizing: border-box;
+       }
+       .username{
+        position: relative;
+        border-bottom: 1px solid #b1b1f8;
+        margin:30px 0 ;
+       }
+       .username input{
+        width: 100%;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 15px;
+        border: none;
+        background: none;
+        outline: none;
+       }
+       .username label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 15px;
+        pointer-events: none;
+        transition: 0.5s;
+       }
+       .username span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #201f1f;
+       }
+       .username input:focus~label,
+       .username input:valid~label{
+            top: -5px;
+            color: #5454f0;
+       }
+       .pass span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #201f1f;
+       }
+       .pass input{
+        width: 100%;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 15px;
+        border: none;
+        background: none;
+        outline: none;
+       }
+        .pass{
+        position: relative;
+        border-bottom: 1px solid #5454f0;
+        margin:30px 0 ;
+       }
+       .pass label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 15px;
+        pointer-events: none;
+        transition: 0.5s;
+       }
+       .pass input:focus~label,
+       .pass input:valid~label{
+            top: -5px;
+            color: #5454f0;
+       
+       }
+       .submit{
+            width: 100%;
+            background-color: #2084f7;
+            height: 40px;
+            border-radius:20px ;
+            margin-bottom: 20px;
+            
+
+        }
+        .submit input{
+            position: relative;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #2084f7;
+            border: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="username">
+                <input type="text" name="" id="username">
+                <span></span>
+                <label >Username</label>
+            </div>
+            <div class="pass">
+                <input type="text" name="" id="Password">
+                <span></span>
+                <label >Password</label>
+            </div>
+            <div class="submit">
+                <input type="submit" value="submit">
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>
