@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 600px;
+            background-color: #fff;
+            height: 80vh;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+        }
+        form{
+            position: relative;
+            left: 5%;
+            padding: 5px;
+        }
+        input{
+            border: none;
+            /* background: none; */
+            outline: none;
+            width: 300px;
+            font-size: 15px;
+            padding: px;
+        }
+        .name div,.batch div,.age div,.email div,.password div{
+            border: 0.5px solid black;
+            width: 550px;
+            background-color: #fff;
+            height: 30px;
+            padding: 2px;
+            border-radius: 10px;
+        }
+        .submit{
+            width:500px ;
+            height: 50px;
+            background-color: #040506;
+            position: relative;
+            left: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+
+        }
+        .submit input{
+            position: relative;
+            top: 10px;
+            left: 100px;
+            background-color: #040506;
+            color: #fff;
+        }
+        .submit input{
+            cursor: pointer;
+        }
+        label{
+            font-family: 'Inter', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form action="" method="get">
+            <div class="name">
+                <label for="name">Name:</label>
+                <div>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div class="batch">
+                <label for="batch">Batch:</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="age">
+                <label for="age">Age:</label>
+                <div>
+                    <input type="number" name="" id="">
+                </div>
+               
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <div><input type="email" name="email" id="Email"></div>
+            </div>
+            <div class="password">
+                <label for="Password">Password:</label>
+                <div><input type="password" name="password" id="Password"></div>
+            </div>
+            <div class="submit">
+                <input type="button" value="Signup">
+            </div>
+            
+
+        </form>
+    </div>
+</body>
+</html>
